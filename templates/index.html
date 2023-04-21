@@ -1,0 +1,59 @@
+{% extends 'base.html' %} {% load static %}
+
+<!-- Developer : ADARSH MAURYA adwebproductions.com-->
+
+{% block title %}Home{% endblock title %} {% block head %}
+
+<link rel="stylesheet" href="{% static '/css/indexStyle.css' %}">
+<link rel="stylesheet" href="{% static '/css/responsive.css' %}">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+{% endblock head %} {% block main %}
+
+<main>
+  <div class="typewriter">
+    <h1 id="tw-head-id" class="tw-head">Welcome to</h1>
+    <ul class="dynamic-texts">
+      <!-- <li><span>YouTuber!</span></li> -->
+      <!-- <li>< span  >hot Or Not!</span></li> -->
+      <li><span id="tw-span">hot Or Not!</span></li>
+    </ul>
+  </div>
+  <div class="home-container">
+    <div id="main-container" class="container">
+      <h2 class="c-head">Click to choose, Who is the best?</h2>
+
+      <form id="us-form" method="POST">
+        {% csrf_token %}
+        <div class="c-sub">
+          <label>
+            <img   class="c-sub-img competitor1" src="{{ images.0.image.url }}" alt="Image 1" width="300">
+            <input class= "rd-input" type="radio" name="winner" value="{{ images.0.id }}" required>
+
+          </label>
+        
+            <p class="c-head">{{ images.0.name }}</p>
+        </div>
+        <span id="c-span">OR</span>
+        <div class="c-sub"id="c-2">
+          <label>
+            <img class="c-sub-img competitor2"  src="{{ images.1.image.url }}" alt="Image 2" width="300">
+            <input class="rd-input" type="radio" name="winner" value="{{ images.1.id }}" required>
+
+          </label>
+            <p class="c-head">{{ images.1.name }}</p>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock main %} {% block script %}
+
+<script src="{% static '/js/index.js' %}"></script>
+<script src="{% static '/js/responsive.js' %}"></script>
+
+{% endblock script %}

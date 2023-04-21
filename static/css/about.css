@@ -1,0 +1,20 @@
+
+#about-para {
+    font-family: sans-serif;
+    font-size: 32px;
+    padding: 40px 120px 10px 120px;
+
+}
+
+#about-para-txt {
+    font-family: sans-serif, monospace;
+    font-size: 16px;
+    line-height: 36px;
+    padding: 20px 120px 40px 120px;
+}
+
+main {
+    height: 600px;
+}
+
+

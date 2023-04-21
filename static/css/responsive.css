@@ -1,0 +1,283 @@
+@media only screen and (max-width:1366px) {
+
+    #nav-list li a {
+        margin: 15px 12px 15px 12px;
+
+    }
+
+    .search-box {
+        width: 460px;
+
+    }
+
+    #search-bar {
+        width: 420px;
+    }
+
+    .nav-items {
+        left: 80px;
+    }
+
+}
+
+@media only screen and (max-width:1200px) {
+    #nav-list li a {
+        font-size: 16px;
+        margin: 15px 8px 15px 8px;
+
+    }
+
+    .search-box {
+        margin-left: 3px;
+        width: 440px;
+
+    }
+
+    #search-bar {
+        width: 400px;
+
+    }
+
+    .theme-changer {
+        left: 0px;
+    }
+
+    .nav-items {
+        left: 20px;
+    }
+
+    .container {
+        width: 1030px;
+        height: 520px;
+    }
+
+    #c-span {
+        left: 95px;
+    }
+
+    .c-sub {
+        width: 340px;
+    }
+
+    .c-sub-img {
+        width: 340px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width : 480px) {
+    header{
+        height: 4rem;
+    }
+    #logo-head{
+        margin: 15px;
+        display : inline-block;
+        position: absolute;
+
+    }
+    #m-nav{
+        height: 3.5rem;
+    }
+    .theme-changer{
+        display: none;
+
+    }
+    .nav-items{
+        display: none;
+
+
+    }
+    #nav-list{
+        overflow: hidden;
+        display: none;
+        position: relative;
+        top: 60px;
+
+
+
+    }
+    #nav-list ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        list-style-type: none;
+        height: 170px;
+        background: rgb(27, 193, 235);
+     
+        align-items: center;
+
+
+    }
+    #nav-list ul li{
+        width:  100%;
+        border-bottom: 1px solid #b0d7e3;
+
+    }
+    #nav-list ul li a{
+        font-size: 15px;
+        margin: 10px 10px 10px 15px;
+
+    }
+    .search-box{
+        visibility: hidden;
+        position: absolute;
+        top: 8px ;
+        right: 3.6rem;
+        height: 44px;
+        width: 236px;
+
+    }
+    .menu-img{
+        height: 25px;
+        width: auto;
+
+    }
+    #menu-btn{
+        height: 32px;
+        margin-left: 14px;
+
+    }
+    #m-search-btn{
+        margin-top: 4px;
+
+    }
+    #menu-list{
+        margin: 11px;
+        width: 80px;
+        
+        text-decoration: none;
+        list-style-type: none;
+        float: right;
+    }
+    .menu-c{
+        width: 80px;
+        position: absolute;
+        top : 14px;
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+    #search-bar{
+        width: 225px;
+        height: 40px;
+        background: whitesmoke;
+        color: black;
+        font-size: 16px;
+        border: 2px dashed white;
+
+    }
+
+    .tw-head{
+        font-size: 28px;
+
+    }
+    .dynamic-texts li{
+        font-size: 27px;
+
+    }
+    .dynamic-texts li span{
+        line-height: 44px;
+
+    }
+    .container{
+        width: 100% ;
+        height: 500px;
+
+    }
+    .c-head{
+        font-size: 20px;
+
+    }
+    .c-sub{
+        margin: 20px 0px 10px 10px;
+        width: calc(100% - 2rem);
+        height: 300px;
+
+
+    }
+    .rd-input{
+        width: 150px;
+    }
+    #c-2{
+        margin: 10px;
+
+    }
+    .c-sub-img{
+        max-width: 100%;
+        height: auto;
+    }
+    #c-span{
+        left: 20px;
+        font-size: 18px;
+        
+        
+    }
+    .c-head{
+        font-size: 16px;
+    }
+    .home-container{
+        height: 500px;
+
+    }
+    footer{
+        margin-top: 30px;
+        height: 152px;
+
+    }
+     .container4{
+        width: calc(100% - 40px);
+        height: 120px;
+        padding: 16px 20px 16px 20px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .container4-box1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 48px;
+        
+    }
+    .container4-box1-sub{
+       position: relative;
+    }
+    .container4-box2{
+        width: 100%;
+        
+        
+    }
+    .copyright{
+        border-left: 0px;
+        padding: 0px;
+        margin: 16px 0px 8px 0px;
+        font-size: 0.875rem;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-links{
+        margin-top: 4px;
+        width: 100%;
+        height: 20px;
+        right:0px;
+        justify-content: center;
+
+    }
+    .container4-subbox{
+        margin-top: 9px;
+        width: 28px;
+    }
+    
+    .container4-subtitle{
+        display: inline-block;
+        width: 136px;
+        height: 28px;
+        transform: translateY(-18px);
+        font-size: 1.25rem;
+        
+        
+    }
+
+
+
+}

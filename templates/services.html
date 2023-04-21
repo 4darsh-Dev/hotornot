@@ -1,0 +1,60 @@
+{% extends 'base.html' %} {% load static %}
+
+<!-- Developer : ADARSH MAURYA adwebproductions.com-->
+
+{% block title %}Services{% endblock title %} {% block head %}
+
+<link rel="stylesheet" href="{% static '/css/indexStyle.css' %}">
+<link rel="stylesheet" href="{% static '/css/responsive.css' %}">
+<link rel="stylesheet" href="{% static '/css/services.css' %}">
+
+{% endblock head %} {% block main %}
+
+<main>
+  <h2>Our Services</h2>
+  <p class="services-para">
+    At Hot Or Not, we offer a range of services to enhance your experience on
+    our website. Here are some of the services we provide:
+  </p>
+  <ul>
+    <li>
+      <strong>Photo Upload:</strong> Upload your photos and let the Hot Or Not
+      community vote on your attractiveness. You can submit as many photos as
+      you want and receive feedback on your looks from people all around the
+      world.
+    </li>
+    <li>
+      <strong>Matching:</strong> Our matching algorithm uses the information
+      from your profile to find other users who share similar interests and
+      looks. This is a great way to connect with like-minded individuals and
+      maybe even find a potential romantic partner.
+    </li>
+    <li>
+      <strong>Premium Membership:</strong> Upgrade to a premium membership and
+      get access to exclusive features, such as the ability to see who voted on
+      your photos and the ability to send messages to other users. Premium
+      members also receive priority support and are featured more prominently on
+      the website.
+    </li>
+    <li>
+      <strong>Mobile App:</strong> Download our mobile app and access Hot Or Not
+      from anywhere, at any time. The app is available for both iOS and Android
+      devices.
+    </li>
+  </ul>
+  <p class="services-para">
+    Thank you for choosing Hot Or Not for all your attractiveness needs. We're
+    constantly working to improve our services and provide you with the best
+    possible experience. If you have any questions or feedback, please don't
+    hesitate to contact us.
+  </p>
+</main>
+
+{% endblock main %} {% block script %}
+
+<script src="{% static '/js/remain.js' %}">
+
+</script>
+<script src="{% static '/js/responsive.js' %}"></script>
+
+{% endblock script %}

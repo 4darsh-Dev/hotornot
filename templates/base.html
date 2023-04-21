@@ -1,0 +1,108 @@
+{% load static %}
+
+<!-- Developer : ADARSH MAURYA adwebproductions.com-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{% block title %}{% endblock title %} | Hot or Not</title>
+    <link rel="shortcut icon" href="{% static '/img/favicon1.ico' %}" type="image/x-icon">
+    {% block head %}
+    
+    {% endblock head %}
+    
+
+</head>
+
+<body id="my-body">
+    <header id="m-header">
+        <nav id="m-nav">
+            <p id="logo-head">hot Or Not</p>
+            <div id="nav-list">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/profiles">Profiles</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                </ul>
+
+            </div>
+            <div id="s-box1" class="search-box">
+                <form method="get" action="/search">
+
+                    <input autofocus autocomplete="off" placeholder="Search for profiles..." type="text" name="search-bar" id="search-bar">
+                    <img id="search-img" src="{% static '/img/search.png' %}" alt="search">
+
+                </form>
+               
+            </div>
+            <div class="theme-changer">
+                <img id="theme-img" src="{% static '/img/moon.png' %}" alt="dark-theme">
+                <span id="t-c-para">Dark </span>
+
+            </div>
+            <div class="nav-items">
+                <img class="nav-img" src="{% static '/img/bell.png' %}" alt="bell">
+                <img class="nav-img" src="{% static '/img/comment.png' %}" alt="comment">
+                <!-- we have multiple options for user images ckeck in img directory. -->
+                <img class="nav-img" src="{% static '/img/user3.png' %}" alt="user">
+            </div>
+
+            <ul id="menu-list">
+                <div class="menu-c">
+                    <li><img id="m-search-btn" class="menu-img" src="{% static '/img/search.png' %}" alt="search"></li>
+                    <li><img id="menu-btn" class="menu-img" src="{% static 'img/menu.svg' %}" alt="menu"></li>
+
+                </div>
+               
+            </ul>
+
+
+        </nav>
+    </header>
+
+    {% block main %}
+    {% endblock main %}
+
+    <footer>
+        <div class="container4">
+            <div class="container4-box1">
+                <div style="margin-top: 3px ;" class="container4-box1-sub">
+                    <div class="container4-logo"> </div>
+                    <span class="container4-subbox">
+                        <p class="container4-subtitle">hot Or Not</p>
+                    </span>
+                </div>
+            </div>
+            <div style="margin-top:3px; " class="container4-box2">
+                <p class="copyright">Copyright &copy; 2023 hotornot.onionreads.com</p>
+
+
+            </div>
+            <span class="contact-links">
+                <a target="_blank" href="https://www.linkedin.com/in/adarsh-maurya-09343a262/"><img
+                        class="contact-link-img" src="{% static '/img/linked.png' %}" height="20px" alt="linked In"></a>
+                <a target="_blank" href="https://www.facebook.com/people/Onion-Reads/100089856034775"><img
+                        class="contact-link-img" src="{% static '/img/fb.png' %}" height="20px" alt="facebook"></a>
+                <a target="_blank" href="#"><img class="contact-link-img" src="{% static '/img/ig.png' %}" height="20px"
+                        alt="instagram"></a>
+                <a target="_blank" href="https://twitter.com/OnionReads"><img class="contact-link-img" src="{% static '/img/tw.png' %}"
+                        height="20px" alt="twitter"></a>
+                <a href="https://github.com/4darsh-Dev" target="_blank"><img style="margin-top:-5px;"
+                        src="{% static '/img/github-logo.png' %}" alt="github" height="25px" class="contact-link-img"></a>
+
+            </span>
+        </div>
+
+    </footer>
+
+    {% block script %}
+    {% endblock script %}
+    
+</body>
+
+</html>

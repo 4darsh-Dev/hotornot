@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+<!-- Developer : ADARSH MAURYA adwebproductions.com-->
+
+{% load static %}
+
+{% block title %}Profiles{% endblock title %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{% static 'css/indexStyle.css' %}">
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<link rel="stylesheet" href="{% static 'css/profiles.css' %}">
+
+{% endblock head %}
+
+{% block main %}
+
+<main>
+    <p id="p-head">
+        Profiles
+    </p>
+    <div id= "p-container" class="p-container">
+        <table id="p-table">
+            <tr id="first-row">
+                <th class="p-c1">S No.</th>
+                <th class="p-c2">Image</th>
+                <th class="p-c3">Name</th>
+                <th class="p-c4">Points</th>
+
+            </tr>
+
+            {% for p in pics  %}
+
+                <tr>
+                    <td class="p-c1">1</td>
+                    <td class="p-c2">
+                        
+                        {% if p.image  %}
+                            <img id="p-img" src="{{p.image.url}}" alt="upload">
+
+                        {% else %}
+                            <img id="p-img" src="{% static 'img/sample-man.jpg' %}" alt="sample-man">
+
+                        {% endif %}
+                    </td>
+                    <td class="p-c3">{{p.name}}</td>
+                    {% if p.points %}
+                    <td class="p-c4">{{p.points}}</td>
+                    {% else %}
+                    <td class="p-c4">0</td>
+                    {% endif %}
+                    
+                </tr>
+            
+            {% endfor %}
+           
+        </table>
+
+    </div>
+
+</main>
+
+{% endblock main %}
+
+{% block script %}
+<script src = "{% static '/js/profiles.js' %}">
+</script>
+<script src="{% static '/js/responsive.js' %}"></script>
+
+{% endblock script %}

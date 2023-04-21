@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- Developer : ADARSH MAURYA adwebproductions.com-->
+
+{% block title %}About{% endblock title %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{% static '/css/indexStyle.css' %}">
+
+<link rel="stylesheet" href="{% static '/css/responsive.css' %}">
+<link rel="stylesheet" href="{% static '/css/about.css' %}">
+
+
+{% endblock head %}
+
+
+{% block main %}
+
+<main>
+        
+    <p id="about-para">
+        ABOUT US
+    </p>
+    <p id="about-para-txt">
+        Welcome to Hot Or Not, the ultimate destination for those who want to have their looks judged by millions of
+        people around the world. Our website is dedicated to helping people find out just how attractive they really
+        are by submitting their photos to our community for voting.
+
+        At Hot Or Not, we believe that everyone is beautiful in their own way, and we're here to celebrate that
+        beauty. Whether you're a supermodel or just an average person, we want to give you a chance to shine and
+        receive recognition for your looks.
+
+        Our voting system is simple and straightforward. Users submit their photos, and the community votes on their
+        attractiveness. You can also browse through other people's photos and vote on them as well. We believe in
+        fairness and objectivity, so our voting system is completely anonymous, and we do not tolerate any form of
+        bullying or harassment.
+
+        Hot Or Not has been around for over a decade, and we're proud to say that we've helped countless people
+        boost their self-esteem and feel more confident about their looks. We've even had some of our users go on to
+        become successful models, actors, and influencers.
+
+        So whether you're looking for validation, a confidence boost, or just some fun, come join our community at
+        Hot Or Not. Who knows, you might just be the hottest person on the website!
+    </p>
+
+
+
+
+</main>
+
+{% endblock main %}
+    
+
+{% block script %}
+
+<script src="{% static '/js/remain.js' %}">
+
+</script>
+<script src="{% static '/js/responsive.js' %}"></script>
+
+{% endblock script %}
+    

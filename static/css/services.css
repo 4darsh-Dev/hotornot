@@ -1,0 +1,30 @@
+h2 {
+    font-family: sans-serif;
+    font-size: 32px;
+    padding: 40px 120px 10px 120px;
+}
+
+.services-para {
+    font-family: sans-serif, monospace;
+    font-size: 16px;
+    padding: 10px 120px 10px 125px;
+}
+
+main {
+    height: 600px;
+}
+
+main ul {
+    font-family: sans-serif, monospace;
+    font-size: 16px;
+    padding: 10px 120px 10px 120px;
+}
+
+main ul li {
+    margin: 6px;
+    padding: 6px;
+}
+
+h3 {
+    padding: 10px 0px 10px 0px;
+}
