@@ -17,30 +17,41 @@
 {% block main %}
 
 <main>
-    <p id="p-head">
-        Profiles
-    </p>
+    <h2 id="p-head">
+        PROFILES
+    </h2>
     <div id= "p-container" class="p-container">
         <table id="p-table">
-            <tr id="first-row">
-                <th class="p-c1">S No.</th>
-                <th class="p-c2">Image</th>
-                <th class="p-c3">Name</th>
-                <th class="p-c4">Points</th>
+            <thead>
+                <tr id="first-row">
+                    <th class="p-c1">S No.</th>
+                    <th class="p-c2">Image</th>
+                    <th class="p-c3">Name</th>
+                    <th class="p-c4">Points</th>
+    
+                </tr>
 
-            </tr>
+            </thead>
+            <tbody>
 
-            {% for p in pics  %}
+                {% for p in pics  %}
 
                 <tr>
                     <td class="p-c1">1</td>
                     <td class="p-c2">
                         
                         {% if p.image  %}
-                            <img id="p-img" src="{{p.image.url}}" alt="upload">
+                            <div class="p-img-box">
+
+                                <img id="p-img" src="{{p.image.url}}" alt="upload">
+                            </div>
 
                         {% else %}
-                            <img id="p-img" src="{% static 'img/sample-man.jpg' %}" alt="sample-man">
+                            <div class="p-img-box">
+                                <img id="p-img" src="{% static 'img/sample-man.jpg' %}" alt="sample-man">
+
+                            </div>
+                           
 
                         {% endif %}
                     </td>
@@ -54,6 +65,9 @@
                 </tr>
             
             {% endfor %}
+            </tbody>
+
+          
            
         </table>
 

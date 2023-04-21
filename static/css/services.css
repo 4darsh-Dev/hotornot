@@ -28,3 +28,56 @@ main ul li {
 h3 {
     padding: 10px 0px 10px 0px;
 }
+
+@media only screen and (min-width:320px) and (max-width: 480px) {
+    h2{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px 30px 20px 30px;
+
+
+    }
+    .services-para{
+        padding: 0px 32px 0px 32px;
+        font-size: 14px;
+        line-height: 30px;
+
+    }
+    main{
+        height: auto;
+    }
+    main ul{
+        font-size: 14px;
+        padding: 10px 30px 10px 30px;
+        line-height: 20px;
+        
+    }
+    
+}
+
+
+@media only screen and (min-width:481px) and (max-width:  1024px) {
+    h2{
+        font-size: 26px;
+        font-weight: 500;
+        padding: 20px 30px 20px 30px;
+
+
+    }
+    .services-para{
+        padding: 0px 32px 0px 32px;
+        font-size: 16px;
+        line-height: 30px;
+
+    }
+    main{
+        height: 850px;
+    }
+    main ul{
+        font-size: 16px;
+        padding: 10px 50px 10px 50px;
+        line-height: 20px;
+        
+    }
+    
+}

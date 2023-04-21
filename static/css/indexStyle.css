@@ -104,7 +104,9 @@ header{
 
 
 }
-
+.menu-img{
+    display: none;
+}
 .theme-changer {
     width: 70px;
     height: 28px;
@@ -171,7 +173,7 @@ header{
 
 .container {
     width: 1120px;
-    height: 600px;
+    height: 650px;
     background-color: white;
 
     margin: 12px 0px 20px 0px;
@@ -213,19 +215,44 @@ header{
     text-align: center;
     
 }
-
+#c-btn{
+    width: 10rem;
+    height: 3rem;
+  
+    background-color: rgb(27, 193, 235);
+    border: 2px solid rgb(27, 193, 235);
+    border-radius: 6px;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif, monspace;
+    font-weight: 500;
+}
+#c-btn:hover{
+    background-color: #2b2f2f;
+    border: 2px solid #2b2f2f;
+    cursor: pointer;
+    color:white;
+}
+#c-btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
 #c-1 {
     float: left;
 
 }
-
-#c-span {
+#c-span{
+    width: 100%;
+    height: auto;
     font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
     position: relative;
-    top: -184px;
-    left: 40px;
-
+    top: -250px;
+    left: 80px;
+    
 }
 
 #c-2 {
