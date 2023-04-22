@@ -12,10 +12,10 @@ def index(request):
     # Check if there are any active images left
     active_images = Image.objects.filter(is_active=True)
 
-    # if not active_images.exists():
-    #     # If not, set is_active of all images to True
-    #     Image.objects.all().update(is_active=True)
-    #     active_images = Image.objects.filter(is_active=True)
+    if not active_images.exists():
+        # If not, set is_active of all images to True
+        Image.objects.all().update(is_active=True)
+        active_images = Image.objects.filter(is_active=True)
 
     images = Image.objects.filter(is_active=True).order_by('?')[:2]
 
