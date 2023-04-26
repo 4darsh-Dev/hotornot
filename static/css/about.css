@@ -2,6 +2,7 @@
 #about-para {
     font-family: sans-serif;
     font-size: 32px;
+    font-weight: 500;
     padding: 40px 120px 10px 120px;
 
 }
@@ -33,6 +34,18 @@ main {
     main{
         height: auto;
     }
+    .s-list{
+        padding: 0px 20px 10px 20px;
+
+    }
+    .s-list li img{
+        height: 150px;
+        width: auto;
+    }
+    #s-query-box{
+        min-height: 600px;
+        
+    }
     
 }
 
@@ -55,6 +68,10 @@ main {
     main{
         height: auto;
     }
+    .s-list{
+        padding: 40px;
+    }
+    
     
 }
 

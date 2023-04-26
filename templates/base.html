@@ -34,10 +34,11 @@
 
             </div>
             <div id="s-box1" class="search-box">
-                <form method="get" action="/search">
+                <form id="s-form" method="POST" action="/search">
+                    {% csrf_token %}
 
-                    <input autofocus autocomplete="off" placeholder="Search for profiles..." type="text" name="search-bar" id="search-bar">
-                    <img id="search-img" src="{% static '/img/search.png' %}" alt="search">
+                    <input placeholder="Search for profiles..." type="text" name="search-bar" id="search-bar">
+                    <img  id="search-img" src="{% static '/img/search.png' %}" alt="search">
 
                 </form>
                

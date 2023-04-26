@@ -10,18 +10,43 @@
 <link rel="stylesheet" href="{% static '/css/indexStyle.css' %}">
 <link rel="stylesheet" href="{% static '/css/responsive.css' %}">
 <link rel="stylesheet" href="{% static '/css/about.css' %}">
+<link rel="stylesheet" href="{% static '/css/search.css' %}">
 
 {% endblock head %}
-
 
 {% block main %}
 
 <main>
+    
+    
+    
+    <h2 id="about-para">
+        Search Results :
+    </h2>
+    <br>
+    <div id = "s-query-box">
+    {% for profile in profiles %}
+
         
-    <p id="about-para">
-        Search Results 
-    </p>
-   
+
+        <ul class="s-list">
+           
+            {% comment %} specify you domain here for image {% endcomment %}
+            <li><img src="http://127.0.0.1:8000/uploads/{{profile.image}}" alt="image"></li>
+            <li>{{profile.name}}</li>
+            <li> Points : {{profile.points}}</li>
+        </ul>
+
+        
+
+
+        
+    
+
+    {% endfor %}
+
+    <div>
+    
 
 
 

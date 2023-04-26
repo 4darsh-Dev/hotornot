@@ -56,22 +56,19 @@ def profiles(request):
     return render(request, "profiles.html", context)
 
 def search(request):
-    allProfiles = Image.objects.all()
-    return render(request, "search.html", allProfiles)
+    # allProfiles = Image.objects.all()
+    if request.method == "POST":
+        searched = request.POST.get("search-bar", "None")
+        profiles = Image.objects.filter(name__icontains = searched)
+        params = { "profiles": profiles}
 
-# def get_competitors(request):
-#     competitors = Image.objects.all()
-#     data = [{'id': c.id, 'name': c.name, 'image': c.image.url} for c in competitors]
-#     return JsonResponse(data, safe=False)
+        return render(request, "search.html", params)
 
 
-# def choose_winner(request):
-#     winner_id = int(request.POST['winner_id'])
-#     loser_id = int(request.POST['loser_id'])
-#     winner = Image.objects.get(id=winner_id)
-#     loser = Image.objects.get(id=loser_id)
-#     winner.wins += 1
-#     loser.losses += 1
-#     winner.save()
-#     loser.save()
-#     return JsonResponse({})
+    
+    else:
+
+        return render(request, "search.html")
+
+
+

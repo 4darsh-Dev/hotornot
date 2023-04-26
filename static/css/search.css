@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.s-list {
+    list-style-type: none;
+    width: calc(100%-160px);
+    padding: 40px 120px 40px 120px ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+.s-list li{
+    margin: 20px;
+    font-size: 18px;
+    font-family: sans-serif, 'Franklin Gothic Medium', 'Arial Narrow';
+    display: flex;
+    align-items: center;
+
+
+}
+.s-list li img{
+    width: auto;
+    height: 200px;
+    border-radius: 8px;
+
+
+}
+
+#s-query-box{
+    min-height: 500px;
+    
+}
+

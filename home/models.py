@@ -14,11 +14,3 @@ class Image(models.Model):
     def __str__(self):
         return f'{self.id}: {self.image.name}'
     
-# def save(self, *args, **kwargs):
-#         if not self.id:
-#             # Generate a unique ID for the image file name
-#             unique_id = uuid.uuid4().hex
-#             timestamp = timezone.now().strftime('%Y%m%d%H%M%S')
-#             filename = f'{timestamp}_{unique_id}.jpg'
-#             self.image.name = filename
-#         models.Model.save(*args, **kwargs)

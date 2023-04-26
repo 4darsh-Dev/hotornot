@@ -90,32 +90,6 @@ mainContainer.addEventListener('mouseout', function(){
 });
 
 
-// function loadCompetitors() {
-//     fetch('/api/get_competitors')
-//         .then(response => response.json())
-//         .then(data => {
-//             const competitor1 = data[Math.floor(Math.random() * data.length)];
-//             const competitor2 = data[Math.floor(Math.random() * data.length)];
-//             if (competitor1 !== competitor2) {
-//                 $('.competitor1').attr('src', competitor1.image);
-//                 $('.competitor2').attr('src', competitor2.image);
-//             } else {
-//                 loadCompetitors();
-//             }
-//         });
-// }
-
-// loadCompetitors();
-
-// $('.winner1').click(function() {
-//     // handle winner 1 logic
-//     loadCompetitors();
-// });
-
-// $('.winner2').click(function() {
-//     // handle winner 2 logic
-//     loadCompetitors();
-// });
 
 
 function getCookie(name) {
@@ -151,3 +125,21 @@ document.querySelector('form').addEventListener('submit', function(event) {
 }); //
 
 
+
+let searchFm = document.getElementById("s-form");
+let searchImage = document.getElementById("search-img");
+
+const submitFm = ()=>{
+    searchFm.submit();
+    console.log("searched");
+}
+
+searchImage.addEventListener("click", submitFm);
+
+searchFm.addEventListener('keyup', function(event){
+    if(event.code === 'Enter'){
+        event.preventDefault();
+        document.querySelector('form').submit();
+
+    }
+})

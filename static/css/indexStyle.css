@@ -75,7 +75,7 @@ header{
 #nav-list li a:hover {
     cursor: pointer;
     border-bottom: 2px solid rgb(68, 64, 64);
-    font-weight: 600;
+    
 }
 
 .search-box {
@@ -103,6 +103,10 @@ header{
     top: 7px;
 
 
+}
+#search-img:hover{
+    cursor: pointer;
+    
 }
 .menu-img{
     display: none;
