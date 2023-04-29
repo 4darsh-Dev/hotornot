@@ -60,9 +60,7 @@
         width: 340px;
     }
 
-    .c-sub-img {
-        width: 340px;
-    }
+   
 }
 
 @media only screen and (min-width: 320px) and (max-width : 480px) {
@@ -231,10 +229,14 @@
         margin: 20px 10px 10px 0px;
 
     }
-    .c-sub-img{
-        max-width: 100%;
-        max-height: 200px;
+    .c-sub-img {
+        border-radius: 6px;
+    height: 200px;
+    width: 150px;
 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     }
     #c-span{
         left: 20px;
@@ -450,7 +452,7 @@
     .c-sub{
         margin: 20px 0px 10px 30px;
         width: 18rem;
-        height: 22rem;
+        height: 25rem;
 
 
     }
@@ -485,10 +487,14 @@
         margin: 20px 10px 10px 0px;
 
     }
-    .c-sub-img{
-        max-width: 100%;
-        max-height: 100%;
+    .c-sub-img {
+        border-radius: 6px;
+    height: 300px;
+    width: 250px;
 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     }
     #c-span{
         left: 20px;

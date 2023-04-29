@@ -32,9 +32,9 @@
         <ul class="s-list">
            
             {% comment %} specify you domain here for image {% endcomment %}
-            <li><img src="http://127.0.0.1:8000/uploads/{{profile.image}}" alt="image"></li>
-            <li>{{profile.name}}</li>
-            <li> Points : {{profile.points}}</li>
+            <li><div style="background-image: url('http://127.0.0.1:8000/uploads/{{profile.image}}');" id="s-list-img"></div></li>
+            <li id="s-list-name">{{profile.name}}</li>
+            <li id="s-list-points"> Points {{profile.points}}</li>
         </ul>
 
         

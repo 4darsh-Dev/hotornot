@@ -27,7 +27,8 @@
         {% csrf_token %}
         <div class="c-sub">
           <label>
-            <img   class="c-sub-img competitor1" src="{{ images.0.image.url }}" alt="Image 1" width="300">
+            <div style = "background-image : url('{{ images.0.image.url }}')" class="c-sub-img competitor1">
+            </div>
             <input class= "rd-input" type="radio" name="winner" value="{{ images.0.id }}" required>
 
           </label>
@@ -37,7 +38,8 @@
         <span id="c-span">OR</span>
         <div class="c-sub"id="c-2">
           <label>
-            <img class="c-sub-img competitor2"  src="{{ images.1.image.url }}" alt="Image 2" width="300">
+            <div style = "background-image : url('{{ images.1.image.url }}')" class="c-sub-img competitor2">
+            </div>
             <input class="rd-input" type="radio" name="winner" value="{{ images.1.id }}" required>
 
           </label>

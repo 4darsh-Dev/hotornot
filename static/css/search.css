@@ -7,7 +7,7 @@
 .s-list {
     list-style-type: none;
     width: calc(100%-160px);
-    padding: 40px 120px 40px 120px ;
+    padding: 10px 120px 40px 120px ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -15,7 +15,7 @@
 
 }
 .s-list li{
-    margin: 20px;
+    
     font-size: 18px;
     font-family: sans-serif, 'Franklin Gothic Medium', 'Arial Narrow';
     display: flex;
@@ -35,4 +35,94 @@
     min-height: 500px;
     
 }
+#s-list-name{
+    width: auto;
+    margin: 20px;
+    font-size: 18px;
+}
+#s-list-points{
+    width: auto;
+    margin: 20px;
+    font-size: 18px;
 
+}
+#s-list-img{
+    height: 250px;
+    width: 250px;
+    background-image: url("http://127.0.0.1:8000/uploads/{{profile.image}}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    
+}
+
+@media only screen and (min-width:320px) and (max-width: 480px) {
+    main{
+        height: auto;
+    }
+    .s-list{
+        padding: 0px 20px 10px 20px;
+
+    }
+    .s-list li img{
+        height: 150px;
+        width: auto;
+    }
+    #s-query-box{
+        min-height: 600px;
+        
+    }
+    #s-list-name{
+        width: 5rem;
+        margin: 10px;
+        font-size: 15px;
+    }
+    #s-list-points{
+        width: 4rem;
+        margin: 10px;
+        font-size: 15px;
+
+    }
+    #s-list-img{
+        height: 150px;
+        width: 150px;
+        background-image: url("http://127.0.0.1:8000/uploads/{{profile.image}}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 6px;
+        
+    }
+
+}
+
+@media only screen and (min-width:481px) and (max-width: 900px){
+    .s-list{
+        padding: 40px;
+
+    }
+    main{
+        height: auto;
+
+    }
+    #s-list-name{
+        width: auto;
+        margin: 20px;
+        font-size: 16px;
+    }
+    #s-list-points{
+        width: auto;
+        margin: 20px;
+        font-size: 16px;
+
+    }
+    #s-list-img{
+        height: 200px;
+        width: 200px;
+        background-image: url("http://127.0.0.1:8000/uploads/{{profile.image}}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 6px;
+        
+    }
+
+}

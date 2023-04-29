@@ -34,18 +34,7 @@ main {
     main{
         height: auto;
     }
-    .s-list{
-        padding: 0px 20px 10px 20px;
-
-    }
-    .s-list li img{
-        height: 150px;
-        width: auto;
-    }
-    #s-query-box{
-        min-height: 600px;
-        
-    }
+    
     
 }
 
@@ -65,12 +54,8 @@ main {
         height: 700px;
 
     }
-    main{
-        height: auto;
-    }
-    .s-list{
-        padding: 40px;
-    }
+   
+    
     
     
 }
