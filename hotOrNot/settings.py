@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gs=auqlvp#gn963$p8w=758&i7j&owhp%a-b#@c-nx9m2*nz*d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [  "https://hotornot-main.vercel.app/","https://www.hotornot-main.vercel.app/" ]
+ALLOWED_HOSTS = [ 'hotornot-main.vercel.app', "https://hotornot-main.vercel.app/","https://www.hotornot-main.vercel.app/" ]
 
 
 # Application definition
