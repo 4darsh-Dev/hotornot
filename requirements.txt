@@ -3,3 +3,4 @@ Django==4.1.7
 Pillow==9.5.0
 sqlparse==0.4.3
 tzdata==2023.2
+django-sqlite3==3.8.3
