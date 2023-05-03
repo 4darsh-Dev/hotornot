@@ -3,7 +3,7 @@
         {
         "src": "hotOrNot/wsgi.py",
         "use": "@vercel/python",
-        "config" : { "maxLambdaSize" : "15mb", "runtime" : "python3.10.5" }
+        "config" : { "maxLambdaSize" : "15mb", "runtime" : "python3.9" }
         },
         { 
             "src": "build_files.sh",
