@@ -12,12 +12,13 @@ body {
 
 #logo-head {
     display: inline-block;
-    width: 8rem;
-    height: 2rem;
+    width: auto;
+    height: 3rem;
     font-family: sans-serif, monospace;
     font-size: 24px;
     font-weight: 500;
     margin-left: 15px;
+    margin: 7px;
 
 
 }

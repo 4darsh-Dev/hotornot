@@ -68,9 +68,14 @@
         height: 4rem;
     }
     #logo-head{
-        margin: 15px;
+        margin-left: 15px;
+        margin: 7px;
+        width: auto;
+        height: 3rem;
+        
         display : inline-block;
         position: absolute;
+
 
     }
     #m-nav{
@@ -325,9 +330,13 @@
         height: 4rem;
     }
     #logo-head{
-        margin: 15px;
+        margin-left: 15px;
+        margin: 7px;
         display : inline-block;
         position: absolute;
+        width: auto;
+        height: 3rem;
+        
 
     }
     #m-nav{
