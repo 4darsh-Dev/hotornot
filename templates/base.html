@@ -11,6 +11,7 @@
     
     <title>{% block title %}{% endblock title %} | Hot or Not</title>
     <link rel="shortcut icon" href="{% static '/img/favicon1.ico' %}" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     {% block head %}
     
     {% endblock head %}
@@ -23,12 +24,18 @@
         <nav id="m-nav">
           
             <a  id="logo-head-txt" href="/"><img id="logo-head" src="/static/img/logo-1.png" alt="hotOrNot"></a>
+            
+            <input type="checkbox" id="check">
+            <label id="check-label" for="check" class="checkbtn">
+                <i class='bx bx-menu'></i>
+               
+            </label>
 
            
             
             <div id="nav-list">
-                <ul>
-                    <li><a href="/">Home</a></li>
+                <ul class="menu-list">
+                    <li><a class="active" href="/">Home</a></li>
                     <li><a href="/profiles">Profiles</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/services">Services</a></li>
@@ -61,15 +68,6 @@
             
            
 
-            <ul id="menu-list">
-                <div class="menu-c">
-                    <li><img id="m-search-btn" class="menu-img" src="{% static '/img/search.png' %}" alt="search"></li>
-                    <li class="menu-li"><img id="menu-btn" class="menu-img" src="/static/img/menu.svg" alt="menu"></li>
-
-                </div>
-               
-            </ul>
-
 
         </nav>
     </header>
@@ -88,12 +86,12 @@
                 </div>
             </div>
             <div style="margin-top:3px; " class="container4-box2">
-                <p class="copyright">Copyright &copy; 2023 hotornot.onionreads.com</p>
+                <p class="copyright">Copyright &copy; 2023 hotornot </p>
 
 
             </div>
             <span class="contact-links">
-                <a target="_blank" href="https://www.linkedin.com/in/adarsh-maurya-09343a262/"><img
+                <a target="_blank" href="https://www.linkedin.com/in/adarsh-maurya-dev/"><img
                         class="contact-link-img" src="{% static '/img/linked.png' %}" height="20px" alt="linked In"></a>
                 <a target="_blank" href="https://www.facebook.com/people/Onion-Reads/100089856034775"><img
                         class="contact-link-img" src="{% static '/img/fb.png' %}" height="20px" alt="facebook"></a>

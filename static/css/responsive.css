@@ -85,42 +85,93 @@
         visibility: visible;
 
     }
-    .nav-items{
+    .checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+
+    cursor: pointer;
+    
+    }
+
+    #check{
         display: none;
 
+    }
+
+
+
+    .checkbtn{
+        display: block;
+        position: absolute;
+        right: 0px;
 
     }
-    #nav-list{
-        overflow: hidden;
-        display: none;
-        position: relative;
-        top: 60px;
 
-
-
-    }
     #nav-list ul{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
         list-style-type: none;
-        height: 170px;
-        background: rgb(27, 193, 235);
-     
-        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition:  all 0.5s ;
 
 
     }
     #nav-list ul li{
-        width:  100%;
-        border-bottom: 1px solid #b0d7e3;
-
+        display: block;
+        /* margin: 15px 0; */
+        line-height: 30px;
     }
+
     #nav-list ul li a{
-        font-size: 15px;
-        margin: 10px 10px 10px 15px;
+        font-size: 20px;
+        color: #464242;
+        text-decoration: none;
 
     }
+    #nav-list ul li a:hover, a.active{
+        color:rgb(27, 193, 235);
+        /* text-decoration: underline; */
+    }
+
+    #check:checked ~ #nav-list ul{
+        z-index: 99999;
+        left: 0;
+        top: 60px;
+
+    }
+
+    #nav-list ul{
+        flex-direction: column;
+        left: -100%;
+        
+    }
+
+    #m-search-btn{
+        margin-top: 4px;
+        margin-right: 8px;
+
+
+    }
+   
+    .theme-changer{
+        display: none;
+
+    }
+
+    .nav-items{
+        display: none;
+
+    }
+
     .search-box{
         visibility: hidden;
         position: absolute;
@@ -130,41 +181,7 @@
         width: 236px;
 
     }
-    .menu-img{
-        display: inline-block;
-        height: 25px;
-        width: auto;
 
-    }
-    #menu-btn{
-        height: 32px;
-        margin-left: 6px;
-
-
-    }
-    #m-search-btn{
-        margin-top: 4px;
-        margin-right: 8px;
-
-
-    }
-    #menu-list{
-        margin: 11px;
-        width: 80px;
-        
-        text-decoration: none;
-        list-style-type: none;
-        float: right;
-    }
-    .menu-c{
-        width: 80px;
-        position: absolute;
-        top : 14px;
-        display: flex;
-        flex-direction: row;
-        
-
-    }
     #search-bar{
         width: 225px;
         height: 40px;
@@ -346,41 +363,77 @@
         visibility: visible;
 
     }
-    .nav-items{
-        display: none;
-
-
+    .checkbtn{
+        font-size: 30px;
+        color: #fff;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+    
+        cursor: pointer;
+        
     }
-    #nav-list{
-        overflow: hidden;
+    
+    #check{
         display: none;
-        position: relative;
-        top: 60px;
-
-
-
+    
     }
+    
+    
+    
+    .checkbtn{
+        display: block;
+        position: absolute;
+        right: 0px;
+    
+    }
+    
     #nav-list ul{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
         list-style-type: none;
-        height: 170px;
-        background: rgb(27, 193, 235);
-     
-        align-items: center;
-
-
+        display: inline-flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition:  all 0.5s ;
+    
+    
     }
     #nav-list ul li{
-        width:  100%;
-        border-bottom: 1px solid #b0d7e3;
-
+        display: block;
+            /* margin: 15px 0; */
+        line-height: 30px;
     }
+    
     #nav-list ul li a{
-        font-size: 15px;
-        margin: 10px 10px 10px 15px;
-
+        font-size: 20px;
+        color: #464242;
+        text-decoration: none;
+    
+    }
+    #nav-list ul li a:hover, a.active{
+        color:rgb(27, 193, 235);
+        /* text-decoration: underline; */
+    }
+    
+    #check:checked ~ #nav-list ul{
+        z-index: 99999;
+        left: 0;
+        top: 60px;
+    
+    }
+    
+    #nav-list ul{
+        flex-direction: column;
+        left: -100%;
+            
+    }
+    .nav-items{
+        display: none;
     }
     .search-box{
         visibility: hidden;
@@ -506,7 +559,7 @@
     
     }
     #c-span{
-        left: 20px;
+        left: 4rem;
         font-size: 18px;
         
         

@@ -137,6 +137,14 @@ header{
 
 }
 
+#check{
+    display: none;
+}
+
+i{
+    display: none;
+}
+
 .nav-items {
     width: 200px;
     height: 40px;

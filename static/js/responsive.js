@@ -1,6 +1,6 @@
 // Responsive JS
 
-let mSearchBtn = document.getElementById("m-search-btn");
+let mSearchBtn = document.getElementById("search-img");
 let searchBar = document.getElementById("s-box1");
 let searchImg = document.getElementById("search-img");
 let menuC = document.getElementsByClassName('menu-c');
@@ -35,33 +35,22 @@ mSearchBtn.addEventListener("click", function(){
 })
 
 let menuBtnCond = true;
-const menuChanger = function (){
+let checkLabel = document.getElementById("check-label");
+
+const menuBtnChanger = function(){
+
     if (menuBtnCond){
-        // menuLi[0].innerHTML = "<img id='menu-btn' class='menu-img' src='/static/img/cross.svg' alt='close'>";
-
-        menuLi[0].innerHTML = "<img id='menu-btn' class='menu-img' src='/static/img/cross.svg' alt='cross'>";
-
-        navList.style.display = "block";
-        header.style.height = "14rem";
+        checkLabel.innerHTML = `<i class='bx bx-x'></i>`;
         menuBtnCond = false;
-        console.log("click1")
-        
     }
-    else {
 
-        // menuLi[0].innerHTML = "<img id='menu-btn' class='menu-img' src='/static/img/menu.svg' alt='menu'>";
+    else{
+        checkLabel.innerHTML = `<i class='bx bx-menu'></i>`;
 
-        menuLi[0].innerHTML = "<img id='menu-btn' class='menu-img' src='/static/img/menu.svg' alt='menu'>";
-
-        navList.style.display = "none";
         menuBtnCond = true;
-        header.style.height = "4rem";
-        console.log("click2")
-        
     }
-
 
 }
 
-    
-menuLi[0].addEventListener("click", menuChanger);
+let menuBtnNew = document.getElementById("check");
+menuBtnNew.addEventListener("click", menuBtnChanger);
