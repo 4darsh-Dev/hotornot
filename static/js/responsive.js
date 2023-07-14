@@ -40,12 +40,12 @@ let checkLabel = document.getElementById("check-label");
 const menuBtnChanger = function(){
 
     if (menuBtnCond){
-        checkLabel.innerHTML = `<i class='bx bx-x'></i>`;
+        checkLabel.innerHTML = `<i id="check-i" class='bx bx-x'></i>`;
         menuBtnCond = false;
     }
 
     else{
-        checkLabel.innerHTML = `<i class='bx bx-menu'></i>`;
+        checkLabel.innerHTML = `<i id="check-i" class='bx bx-menu'></i>`;
 
         menuBtnCond = true;
     }

@@ -78,6 +78,14 @@
 
 
     }
+    #logo-head-txt{
+        margin: 0px;
+    }
+
+    #logo-head-txt img{
+        width:auto;
+    }
+    
     #m-nav{
         height: 3.5rem;
     }
@@ -86,7 +94,7 @@
 
     }
     .checkbtn{
-    font-size: 30px;
+    font-size: 35px;
     color: #fff;
     float: right;
     line-height: 80px;
@@ -100,13 +108,17 @@
         display: none;
 
     }
-
+    #check-i{
+        display: block;
+        /* color: red; */
+    }
 
 
     .checkbtn{
         display: block;
         position: absolute;
         right: 0px;
+        top: 12px;
 
     }
 
@@ -356,6 +368,17 @@
         
 
     }
+    #check-i{
+        display: block;
+        /* color: red; */
+    }
+
+    #logo-head-txt{
+        margin: 0px;
+    }
+    #logo-head-txt img{
+        width:auto;
+    }
     #m-nav{
         height: 3.5rem;
     }
@@ -364,7 +387,7 @@
 
     }
     .checkbtn{
-        font-size: 30px;
+        font-size: 35px;
         color: #fff;
         float: right;
         line-height: 80px;
@@ -385,6 +408,7 @@
         display: block;
         position: absolute;
         right: 0px;
+        top: 12px;
     
     }
     
